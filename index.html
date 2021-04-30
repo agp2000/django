@@ -1,0 +1,274 @@
+{% load staticfiles %}
+{% load cms_tags %}
+<html>
+<head>
+<meta charset="utf-8">
+<title>percobaan</title>
+<meta name="generator" content="WYSIWYG Web Builder 14 - http://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
+<link href="{% static 'css/plate.css' %}" rel="stylesheet">
+<link href="{% static 'css/index.css' %}" rel="stylesheet">
+<script src="{% static 'js/jquery-1.12.4.min.js' %}"></script>
+<script src="{% static 'js/jquery-ui.min.js' %}"></script>
+<script src="{% static 'js/transition.min.js' %}"></script>
+<script src="{% static 'js/collapse.min.js' %}"></script>
+<script src="{% static 'js/dropdown.min.js' %}"></script>
+<script src="{% static 'js/wb.parallax.min.js' %}"></script>
+<script>
+$(document).ready(function()
+{
+   $("a[href*='#header']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
+   });
+   $(document).on('click','.ThemeableMenu1-navbar-collapse.in',function(e)
+   {
+      if ($(e.target).is('a') && ($(e.target).attr('class') != 'dropdown-toggle')) 
+      {
+         $(this).collapse('hide');
+      }
+   });
+   $('#wb_LayoutGrid5').parallax();
+   $("a[href*='#LayoutGrid4']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid4').offset().top-88 }, 600, 'easeOutCirc');
+   });
+});
+</script>
+</head>
+<body>
+<div id="wb_header">
+<div id="header">
+<div class="row">
+<div class="col-1">
+<div id="wb_Breadcrumb1" style="display:inline-block;width:100%;z-index:0;vertical-align:top;">
+<ul id="Breadcrumb1">
+<li><a href="">{% placeholder "title" %}</a></li>
+</ul>
+
+</div>
+</div>
+<div class="col-2">
+<div id="wb_ThemeableMenu1" style="display:inline-block;width:100%;z-index:1001;">
+<div id="ThemeableMenu1" class="ThemeableMenu1" style="width:100%;height:auto !important;">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".ThemeableMenu1-navbar-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div class="ThemeableMenu1-navbar-collapse collapse">
+<ul class="nav navbar-nav">
+<li class="">
+<a href="./index.html">Home</a>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li><a href="./index.html#services1">Service #1</a></li>
+<li><a href="./index.html#services1">Service #2</a></li>
+<li><a href="./index.html#services2">Service #3</a></li>
+<li><a href="./index.html#services2">Service #4</a></li>
+</ul>
+</li>
+<li class="">
+<a href="./index.html#portfolio">{% placeholder "text1" %}</a>
+</li>
+<li class="">
+<a href="./about.html">{% placeholder "text2" %}</a>
+</li>
+<li class="">
+<a href="./index.html#contact">{% placeholder "text3" %}</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid5">
+<div id="LayoutGrid5-overlay"></div>
+<div id="LayoutGrid5">
+<div class="row">
+<div class="col-1">
+<div id="wb_Heading5" style="display:inline-block;width:100%;text-align:center;z-index:2;">
+<h1 id="Heading5">{% placeholder "articleheader" %}</h1>
+</div>
+<div id="wb_Heading6" style="display:inline-block;width:100%;text-align:center;z-index:3;">
+<h2 id="Heading6">Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor.</h2>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_Image1" style="display:inline-block;width:100%;height:auto;z-index:4;">
+<img src="images/300x200.png" id="Image1" alt="" title="600x400">
+</div>
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="wb_Heading1" style="display:inline-block;width:100%;z-index:5;">
+<h1 id="Heading1">Title</h1>
+</div>
+<div id="wb_Heading2" style="display:inline-block;width:100%;z-index:6;">
+<h2 id="Heading2">Description</h2>
+</div>
+<div id="wb_Text1">
+<span style="color:#969696;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero.</span>
+</div>
+<div id="wb_Shape1" style="display:inline-block;width:102px;height:44px;z-index:8;position:relative;">
+<img src="images/img0001.png" id="Shape1" alt="" style="width:102px;height:44px;">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid4">
+<div id="LayoutGrid4">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_Card7" style="display:flex;width:100%;z-index:9;">
+   <div id="Card7-card-body">
+      <div id="Card7-card-item0"><i class="fa fa-user"></i></div>
+      <div id="Card7-card-item1">About</div>
+      <div id="Card7-card-item2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+   </div>
+
+</div>
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="wb_Card8" style="display:flex;width:100%;z-index:10;">
+   <div id="Card8-card-body">
+      <div id="Card8-card-item0"><i class="fa fa-check"></i></div>
+      <div id="Card8-card-item1">Services</div>
+      <div id="Card8-card-item2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+   </div>
+
+</div>
+</div>
+</div>
+<div class="col-3">
+<div class="col-3-padding">
+<div id="wb_Card9" style="display:flex;width:100%;z-index:11;">
+   <div id="Card9-card-body">
+      <div id="Card9-card-item0"><i class="fa fa-puzzle-piece"></i></div>
+      <div id="Card9-card-item1">Products</div>
+      <div id="Card9-card-item2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+   </div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_links">
+<div id="links-overlay"></div>
+<div id="links">
+<div class="row">
+<div class="col-1">
+<div id="wb_linksText1">
+<span style="color:#FFFFFF;"><strong>Navigate</strong></span>
+</div>
+<div id="wb_linksMenu1" style="display:inline-block;width:100%;z-index:13;">
+<ul role="menubar">
+<li class="firstmain"><a role="menuitem" href="#" target="_self">Home</a>
+</li>
+<li><a role="menuitem" href="#" target="_self">About</a>
+</li>
+<li><a role="menuitem" href="#" target="_self">Services</a>
+</li>
+<li><a role="menuitem" href="#" target="_self">Products</a>
+</li>
+</ul>
+
+</div>
+</div>
+<div class="col-2">
+<div id="wb_linksText2">
+<span style="color:#FFFFFF;"><strong>Support</strong></span>
+</div>
+<div id="wb_linksMenu2" style="display:inline-block;width:100%;z-index:15;">
+<ul role="menubar">
+<li class="firstmain"><a role="menuitem" href="#" target="_self">FAQ</a>
+</li>
+<li><a role="menuitem" href="#" target="_self">Knowledge&nbsp;Base</a>
+</li>
+<li><a role="menuitem" href="#" target="_self">Community&nbsp;Forum</a>
+</li>
+<li><a role="menuitem" href="#" target="_self">Video&nbsp;Tutorials</a>
+</li>
+</ul>
+
+</div>
+</div>
+<div class="col-3">
+<div id="wb_linksText3">
+<span style="color:#FFFFFF;"><strong>Follow Us</strong></span>
+</div>
+<div id="wb_linksMenu3" style="display:inline-block;width:100%;z-index:17;">
+<ul role="menubar">
+<li class="firstmain"><a role="menuitem" href="#" target="_self">Facebook</a>
+</li>
+<li><a role="menuitem" href="#" target="_self">Instagram</a>
+</li>
+<li><a role="menuitem" href="#" target="_self">Twitter</a>
+</li>
+<li><a role="menuitem" href="#" target="_self">YouTube</a>
+</li>
+</ul>
+
+</div>
+</div>
+<div class="col-4">
+<div id="wb_linksText4">
+<span style="color:#FFFFFF;"><strong>Company</strong></span>
+</div>
+<div id="wb_linksMenu4" style="display:inline-block;width:100%;z-index:19;">
+<ul role="menubar">
+<li class="firstmain"><a role="menuitem" href="#" target="_self">About</a>
+</li>
+<li><a role="menuitem" href="#" target="_self">Careers</a>
+</li>
+<li><a role="menuitem" href="#" target="_self">Press&nbsp;Kit</a>
+</li>
+<li><a role="menuitem" href="#" target="_self">Contact</a>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_footer">
+<div id="footer">
+<div class="row">
+<div class="col-1">
+<div id="wb_footerText">
+<span style="color:#787878;">Copyright © 2018 WYSIWYG Web Builder.&nbsp; All Rights Reserved</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
